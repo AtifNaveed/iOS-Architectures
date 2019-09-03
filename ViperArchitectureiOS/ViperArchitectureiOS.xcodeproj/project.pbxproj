@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0520237231E9ACA0045F4CF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052022C231E9AC90045F4CF /* HomeRouter.swift */; };
+		C0520238231E9ACA0045F4CF /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052022E231E9AC90045F4CF /* NewsModel.swift */; };
+		C0520239231E9ACA0045F4CF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0520230231E9AC90045F4CF /* HomePresenter.swift */; };
+		C052023A231E9ACA0045F4CF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0520232231E9AC90045F4CF /* HomeViewController.swift */; };
+		C052023B231E9ACA0045F4CF /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0520234231E9AC90045F4CF /* HomeInteractor.swift */; };
+		C052023C231E9ACA0045F4CF /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0520236231E9AC90045F4CF /* HomeProtocols.swift */; };
+		C052023E231E9AE00045F4CF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052023D231E9AE00045F4CF /* Constants.swift */; };
 		C0A8D4B0231D432F00A9CA32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8D4AF231D432F00A9CA32 /* AppDelegate.swift */; };
 		C0A8D4B2231D432F00A9CA32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A8D4B1231D432F00A9CA32 /* ViewController.swift */; };
 		C0A8D4B5231D432F00A9CA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A8D4B3231D432F00A9CA32 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C052022C231E9AC90045F4CF /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C052022E231E9AC90045F4CF /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		C0520230231E9AC90045F4CF /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C0520232231E9AC90045F4CF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C0520234231E9AC90045F4CF /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C0520236231E9AC90045F4CF /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		C052023D231E9AE00045F4CF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C0A8D4AC231D432F00A9CA32 /* ViperArchitectureiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperArchitectureiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A8D4AF231D432F00A9CA32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A8D4B1231D432F00A9CA32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +49,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0520229231E9AC90045F4CF /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C052022A231E9AC90045F4CF /* Home */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		C052022A231E9AC90045F4CF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C0520231231E9AC90045F4CF /* view */,
+				C0520233231E9AC90045F4CF /* interector */,
+				C052022F231E9AC90045F4CF /* presenter */,
+				C052022D231E9AC90045F4CF /* entity */,
+				C052022B231E9AC90045F4CF /* route */,
+				C0520235231E9AC90045F4CF /* protocols */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C052022B231E9AC90045F4CF /* route */ = {
+			isa = PBXGroup;
+			children = (
+				C052022C231E9AC90045F4CF /* HomeRouter.swift */,
+			);
+			path = route;
+			sourceTree = "<group>";
+		};
+		C052022D231E9AC90045F4CF /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				C052022E231E9AC90045F4CF /* NewsModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		C052022F231E9AC90045F4CF /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C0520230231E9AC90045F4CF /* HomePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		C0520231231E9AC90045F4CF /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C0520232231E9AC90045F4CF /* HomeViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C0520233231E9AC90045F4CF /* interector */ = {
+			isa = PBXGroup;
+			children = (
+				C0520234231E9AC90045F4CF /* HomeInteractor.swift */,
+			);
+			path = interector;
+			sourceTree = "<group>";
+		};
+		C0520235231E9AC90045F4CF /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C0520236231E9AC90045F4CF /* HomeProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
 		C0A8D4A3231D432E00A9CA32 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +137,11 @@
 		C0A8D4AE231D432F00A9CA32 /* ViperArchitectureiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C0520229231E9AC90045F4CF /* modules */,
 				C0A8D4AF231D432F00A9CA32 /* AppDelegate.swift */,
 				C0A8D4B1231D432F00A9CA32 /* ViewController.swift */,
 				C0A8D4B3231D432F00A9CA32 /* Main.storyboard */,
+				C052023D231E9AE00045F4CF /* Constants.swift */,
 				C0A8D4B6231D433000A9CA32 /* Assets.xcassets */,
 				C0A8D4B8231D433000A9CA32 /* LaunchScreen.storyboard */,
 				C0A8D4BB231D433000A9CA32 /* Info.plist */,
@@ -135,8 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0520238231E9ACA0045F4CF /* NewsModel.swift in Sources */,
 				C0A8D4B2231D432F00A9CA32 /* ViewController.swift in Sources */,
+				C0520237231E9ACA0045F4CF /* HomeRouter.swift in Sources */,
+				C0520239231E9ACA0045F4CF /* HomePresenter.swift in Sources */,
+				C052023C231E9ACA0045F4CF /* HomeProtocols.swift in Sources */,
 				C0A8D4B0231D432F00A9CA32 /* AppDelegate.swift in Sources */,
+				C052023A231E9ACA0045F4CF /* HomeViewController.swift in Sources */,
+				C052023B231E9ACA0045F4CF /* HomeInteractor.swift in Sources */,
+				C052023E231E9AE00045F4CF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
