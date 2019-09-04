@@ -12,12 +12,13 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: ViewToPresenterProtocol?
     var dataArray: [NewsModel] = []
+    var hud: UIView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         presenter?.updateView()
-        //tableView.tableFooterView = UIView()
+        hud.addHud(view: self.view)
     }
 }
 
@@ -28,6 +29,7 @@ extension HomeViewController: PresenterToViewProtocol {
         //tableView.reloadData()
         DispatchQueue.main.async {
             self.tableView.reloadData()
+            self.hud.removeHUD()
         }
     }
     

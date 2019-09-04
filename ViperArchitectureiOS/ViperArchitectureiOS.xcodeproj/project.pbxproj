@@ -20,6 +20,7 @@
 		C0A8D4BA231D433000A9CA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A8D4B8231D433000A9CA32 /* LaunchScreen.storyboard */; };
 		C0B41210231F9BDF003793F4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4120F231F9BDF003793F4 /* HomeTableViewCell.swift */; };
 		C0B41212231FA940003793F4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B41211231FA940003793F4 /* UIImageView.swift */; };
+		C0B41218231FB65A003793F4 /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B41217231FB65A003793F4 /* Hud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C0A8D4BB231D433000A9CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0B4120F231F9BDF003793F4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C0B41211231FA940003793F4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		C0B41217231FB65A003793F4 /* Hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		C0B41215231FB576003793F4 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				C0B41217231FB65A003793F4 /* Hud.swift */,
 				C0B41211231FA940003793F4 /* UIImageView.swift */,
 			);
 			path = extension;
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B41218231FB65A003793F4 /* Hud.swift in Sources */,
 				C0520238231E9ACA0045F4CF /* NewsModel.swift in Sources */,
 				C0520237231E9ACA0045F4CF /* HomeRouter.swift in Sources */,
 				C0520239231E9ACA0045F4CF /* HomePresenter.swift in Sources */,
