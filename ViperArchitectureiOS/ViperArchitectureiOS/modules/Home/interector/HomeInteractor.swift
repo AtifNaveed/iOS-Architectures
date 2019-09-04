@@ -12,6 +12,7 @@ class HomeInteractor: PresenterToInteractorProtocol {
     var presenter: InteractorToPresenterProtocol?
     
     func fetchNews() {
+        // TODO Move boilerplate code
         let session = URLSession.shared
         let url = URL(string: Constants.request_url)!
         var request = URLRequest(url: url)

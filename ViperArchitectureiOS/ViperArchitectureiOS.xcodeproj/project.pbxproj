@@ -140,16 +140,32 @@
 		C0A8D4AE231D432F00A9CA32 /* ViperArchitectureiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C0B41216231FB589003793F4 /* app */,
+				C0B41215231FB576003793F4 /* extension */,
 				C0520229231E9AC90045F4CF /* modules */,
+				C0A8D4B6231D433000A9CA32 /* Assets.xcassets */,
+			);
+			path = ViperArchitectureiOS;
+			sourceTree = "<group>";
+		};
+		C0B41215231FB576003793F4 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0B41211231FA940003793F4 /* UIImageView.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		C0B41216231FB589003793F4 /* app */ = {
+			isa = PBXGroup;
+			children = (
 				C0A8D4AF231D432F00A9CA32 /* AppDelegate.swift */,
 				C0A8D4B3231D432F00A9CA32 /* Main.storyboard */,
 				C052023D231E9AE00045F4CF /* Constants.swift */,
-				C0B41211231FA940003793F4 /* UIImageView.swift */,
-				C0A8D4B6231D433000A9CA32 /* Assets.xcassets */,
 				C0A8D4B8231D433000A9CA32 /* LaunchScreen.storyboard */,
 				C0A8D4BB231D433000A9CA32 /* Info.plist */,
 			);
-			path = ViperArchitectureiOS;
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC374WERJC;
-				INFOPLIST_FILE = ViperArchitectureiOS/Info.plist;
+				INFOPLIST_FILE = ViperArchitectureiOS/app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HC374WERJC;
-				INFOPLIST_FILE = ViperArchitectureiOS/Info.plist;
+				INFOPLIST_FILE = ViperArchitectureiOS/app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
