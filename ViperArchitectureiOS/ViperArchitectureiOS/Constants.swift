@@ -8,7 +8,7 @@
 
 import UIKit
 
+//#warning //add api key
 struct Constants {
-    #warning add api key
-    public static let request_url = "https://newsapi.org/v1/articles?source=techcrunch&apiKey="
+    public static let request_url = "https://newsapi.org/v1/articles?source=techcrunch&apiKey=17cf1b333e964cea91e89e1e824bd366"
 }

@@ -18,6 +18,8 @@
 		C0A8D4B5231D432F00A9CA32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A8D4B3231D432F00A9CA32 /* Main.storyboard */; };
 		C0A8D4B7231D433000A9CA32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A8D4B6231D433000A9CA32 /* Assets.xcassets */; };
 		C0A8D4BA231D433000A9CA32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A8D4B8231D433000A9CA32 /* LaunchScreen.storyboard */; };
+		C0B41210231F9BDF003793F4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B4120F231F9BDF003793F4 /* HomeTableViewCell.swift */; };
+		C0B41212231FA940003793F4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B41211231FA940003793F4 /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C0A8D4B6231D433000A9CA32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A8D4B9231D433000A9CA32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A8D4BB231D433000A9CA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B4120F231F9BDF003793F4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C0B41211231FA940003793F4 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C0520232231E9AC90045F4CF /* HomeViewController.swift */,
+				C0B4120F231F9BDF003793F4 /* HomeTableViewCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				C0A8D4AF231D432F00A9CA32 /* AppDelegate.swift */,
 				C0A8D4B3231D432F00A9CA32 /* Main.storyboard */,
 				C052023D231E9AE00045F4CF /* Constants.swift */,
+				C0B41211231FA940003793F4 /* UIImageView.swift */,
 				C0A8D4B6231D433000A9CA32 /* Assets.xcassets */,
 				C0A8D4B8231D433000A9CA32 /* LaunchScreen.storyboard */,
 				C0A8D4BB231D433000A9CA32 /* Info.plist */,
@@ -223,6 +229,8 @@
 				C052023C231E9ACA0045F4CF /* HomeProtocols.swift in Sources */,
 				C0A8D4B0231D432F00A9CA32 /* AppDelegate.swift in Sources */,
 				C052023A231E9ACA0045F4CF /* HomeViewController.swift in Sources */,
+				C0B41212231FA940003793F4 /* UIImageView.swift in Sources */,
+				C0B41210231F9BDF003793F4 /* HomeTableViewCell.swift in Sources */,
 				C052023B231E9ACA0045F4CF /* HomeInteractor.swift in Sources */,
 				C052023E231E9AE00045F4CF /* Constants.swift in Sources */,
 			);
