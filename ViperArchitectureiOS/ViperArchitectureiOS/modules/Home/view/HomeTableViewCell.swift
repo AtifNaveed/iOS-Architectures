@@ -20,6 +20,6 @@ class HomeTableViewCell: UITableViewCell {
         lblTitle?.text = news.title
         lblDescription?.text = news.description
         lblAuthor?.text = "\"\(news.author)\""
-        imgView?.image(url: news.urlToImage)
+        imagView?.image(url: news.urlToImage)
     }
 }

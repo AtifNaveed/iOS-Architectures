@@ -84,7 +84,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imgView" destination="GRL-os-IlL" id="rwV-1s-gqm"/>
+                                            <outlet property="imagView" destination="GRL-os-IlL" id="lBG-Aa-9ZC"/>
                                             <outlet property="lblAuthor" destination="QpR-c2-BjX" id="edv-Tq-Nzt"/>
                                             <outlet property="lblDescription" destination="zNE-hQ-xtb" id="fvi-mQ-eim"/>
                                             <outlet property="lblTitle" destination="swm-73-hhr" id="k9y-Sr-t45"/>

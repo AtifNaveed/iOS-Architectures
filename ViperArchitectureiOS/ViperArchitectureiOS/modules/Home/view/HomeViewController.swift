@@ -9,9 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
-
     var presenter: ViewToPresenterProtocol?
     var dataArray: [NewsModel] = []
 
@@ -50,6 +48,4 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         cell.data(forRow: news)
         return cell
     }
-    
-    
 }
