@@ -10,23 +10,21 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var presenter: ViewToPresenterProtocol?
+    var presenter: HomeViewToPresenterProtocol?
     var dataArray: [NewsModel] = []
     var hud: UIView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter?.updateView()
+        presenter?.updateHomeView()
         hud.addHud(view: self.view)
     }
 }
 
-extension HomeViewController: PresenterToViewProtocol {
+extension HomeViewController: HomePresenterToViewProtocol {
     func loadNews(news: [NewsModel]) {
         dataArray = news
-        //print(dataArray)
-        //tableView.reloadData()
         DispatchQueue.main.async {
             self.tableView.reloadData()
             self.hud.removeHUD()
@@ -49,5 +47,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let news = dataArray[indexPath.row]
         cell.data(forRow: news)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showDetail(forPost: dataArray[indexPath.row])
     }
 }

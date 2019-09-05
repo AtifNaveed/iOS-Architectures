@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HomeInteractor: PresenterToInteractorProtocol {
-    var presenter: InteractorToPresenterProtocol?
+class HomeInteractor: HomePresenterToInteractorProtocol {
+    var presenter: HomeInteractorToPresenterProtocol?
     
     func fetchNews() {
         // TODO Move boilerplate code
