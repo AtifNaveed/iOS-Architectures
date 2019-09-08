@@ -1,4 +1,5 @@
 # iOS-Architectures
 
-- Viper using swift
-
+Typical master detail view using swift &
+- Viper Architecture
+- MVP Architecture
