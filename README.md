@@ -1,4 +1,4 @@
 # iOS-Architectures
 
-- Viper using swift
-
+- Viper Architecture
+- MVP Architecture
