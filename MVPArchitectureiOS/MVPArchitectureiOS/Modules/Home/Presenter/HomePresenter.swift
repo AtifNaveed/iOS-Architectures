@@ -25,7 +25,7 @@ class HomePresenter:HomeViewToPresenterProtocol {
     var homeView: HomePresenterToViewProtocol?
 
     func showDetail(from view: HomePresenterToViewProtocol, forPost news: NewsModel) {
-        let detailVC = appDelegate().storyboard().instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as! DetailViewController
+        guard let detailVC = appDelegate().storyboard().instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController else { return }
         let presenter: DetailViewToPresenterProtocol = DetailPresenter()
         detailVC.presenter = presenter
         detailVC.presenter?.detailView = detailVC
