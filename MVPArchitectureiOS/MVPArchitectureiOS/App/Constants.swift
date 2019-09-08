@@ -1,8 +1,8 @@
 //
 //  Constants.swift
-//  ViperArchitectureiOS
+//  MVPArchitectureiOS
 //
-//  Created by Atif on 03/09/2019.
+//  Created by Atif on 05/09/2019.
 //  Copyright © 2019 Atif. All rights reserved.
 //
 
