@@ -1,7 +1,7 @@
 # Clean Architecture (iOS & Swift)
 
 Typical master detail example
-- Viper Architecture
-- MVVM Architecture
-- MVP Architecture
-- MVC Architecture
+- Viper Architecture (View-Interactor-Presenter-Entity-Router)
+- MVVM Architecture  (Model-View-ViewModel)
+- MVP Architecture   (Model-View-Provider)
+- MVC Architecture   (Model-View-Controller)
