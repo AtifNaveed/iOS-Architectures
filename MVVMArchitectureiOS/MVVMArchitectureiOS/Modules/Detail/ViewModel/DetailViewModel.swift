@@ -17,7 +17,7 @@ class DetailViewModel {
     func loadItem(item: NewsModel) {
         title?(item.title)
         descripton?(item.description)
-        author?(item.author)
+        author?("\"\(item.author)\"")
         imageUrl?(item.urlToImage)
     }
 }
