@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C021B1CC2326441000F3B661 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C021B1CB2326441000F3B661 /* Service.swift */; };
 		C0520237231E9ACA0045F4CF /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052022C231E9AC90045F4CF /* HomeRouter.swift */; };
 		C0520238231E9ACA0045F4CF /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052022E231E9AC90045F4CF /* NewsModel.swift */; };
 		C0520239231E9ACA0045F4CF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0520230231E9AC90045F4CF /* HomePresenter.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C021B1CB2326441000F3B661 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C052022C231E9AC90045F4CF /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		C052022E231E9AC90045F4CF /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		C0520230231E9AC90045F4CF /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C021B1CA2326440500F3B661 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C021B1CB2326441000F3B661 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C0520229231E9AC90045F4CF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		C0A8D4AE231D432F00A9CA32 /* ViperArchitectureiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C021B1CA2326440500F3B661 /* Service */,
 				C0B41216231FB589003793F4 /* App */,
 				C0B41215231FB576003793F4 /* Extension */,
 				C0520229231E9AC90045F4CF /* Modules */,
@@ -324,6 +335,7 @@
 				C052023C231E9ACA0045F4CF /* HomeProtocols.swift in Sources */,
 				C0A8D4B0231D432F00A9CA32 /* AppDelegate.swift in Sources */,
 				C052023A231E9ACA0045F4CF /* HomeViewController.swift in Sources */,
+				C021B1CC2326441000F3B661 /* Service.swift in Sources */,
 				C0B41212231FA940003793F4 /* UIImageView.swift in Sources */,
 				C0B41210231F9BDF003793F4 /* HomeTableViewCell.swift in Sources */,
 				C052023B231E9ACA0045F4CF /* HomeInteractor.swift in Sources */,
