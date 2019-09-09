@@ -163,11 +163,10 @@
 		C0A8D4AE231D432F00A9CA32 /* ViperArchitectureiOS */ = {
 			isa = PBXGroup;
 			children = (
-				C021B1CA2326440500F3B661 /* Service */,
 				C0B41216231FB589003793F4 /* App */,
+				C021B1CA2326440500F3B661 /* Service */,
 				C0B41215231FB576003793F4 /* Extension */,
 				C0520229231E9AC90045F4CF /* Modules */,
-				C0A8D4B6231D433000A9CA32 /* Assets.xcassets */,
 			);
 			path = ViperArchitectureiOS;
 			sourceTree = "<group>";
@@ -187,6 +186,7 @@
 				C0A8D4AF231D432F00A9CA32 /* AppDelegate.swift */,
 				C0A8D4B3231D432F00A9CA32 /* Main.storyboard */,
 				C052023D231E9AE00045F4CF /* Constants.swift */,
+				C0A8D4B6231D433000A9CA32 /* Assets.xcassets */,
 				C0A8D4B8231D433000A9CA32 /* LaunchScreen.storyboard */,
 				C0A8D4BB231D433000A9CA32 /* Info.plist */,
 			);
