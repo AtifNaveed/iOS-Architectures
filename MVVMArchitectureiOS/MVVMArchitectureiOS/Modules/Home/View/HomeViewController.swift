@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     }
     private func apiRequest() {
         api.delegate = self
-        api.fetchNews()
+        api.apiRequest()
     }
  }
 
