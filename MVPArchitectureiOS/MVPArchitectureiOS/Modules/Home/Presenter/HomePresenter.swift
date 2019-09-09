@@ -20,10 +20,24 @@ protocol HomeViewToPresenterProtocol: class {
     func showDetail(from view: HomePresenterToViewProtocol, forPost news: NewsModel)
 }
 
-class HomePresenter:HomeViewToPresenterProtocol {
-    
+class HomePresenter: HomeViewToPresenterProtocol, ServiceProtocol {
     var homeView: HomePresenterToViewProtocol?
+    var apiRequest: Service?
 
+    func updateHomeView() {
+        apiRequest = Service()
+        apiRequest!.delegate = self
+        apiRequest!.fetchNews()
+    }
+    
+    func apiRespondSuccessfully(news: [NewsModel]) {
+        self.homeView?.fetchNews(news: news)
+    }
+    
+    func apiRequestFailedWithError(error: Error) {
+        self.homeView?.fetchingNewsFailedWithError(error: error)
+    }
+    
     func showDetail(from view: HomePresenterToViewProtocol, forPost news: NewsModel) {
         guard let detailVC = appDelegate().storyboard().instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController else { return }
         let presenter: DetailViewToPresenterProtocol = DetailPresenter()
@@ -33,40 +47,5 @@ class HomePresenter:HomeViewToPresenterProtocol {
         if let sourceView = view as? UIViewController {
             sourceView.navigationController?.pushViewController(detailVC, animated: true)
         }
-    }
-
-    func updateHomeView() {
-        fetchNews()
-    }
-    
-    func fetchNews() {
-        // TODO Move boilerplate code
-        let session = URLSession.shared
-        let url = URL(string: Constants.request_url)!
-        var request = URLRequest(url: url)
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
-            if let data = data {
-                do {
-                    if let json = try JSONSerialization.jsonObject(with: data) as? [String: Any] {
-                        if let status = json["status"] as? String, status == "ok" {
-                            if let content = json["articles"] as? [[String:String]] {
-                                var array = Array<NewsModel>()
-                                for item in content {
-                                    let decoder = JSONDecoder()
-                                    let jsonData = try JSONSerialization.data(withJSONObject: item)
-                                    let newsModel = try decoder.decode(NewsModel.self, from: jsonData)
-                                    array.append(newsModel)
-                                }
-                                self.homeView?.fetchNews(news: array)
-                            }
-                        }
-                    }
-                } catch {
-                    print(error)
-                    self.homeView?.fetchingNewsFailedWithError(error: error)
-                }
-            }
-        }).resume()
     }
 }

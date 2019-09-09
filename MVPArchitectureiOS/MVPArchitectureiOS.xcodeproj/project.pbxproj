@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C056635E23263EA100BE5625 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056635D23263EA100BE5625 /* Service.swift */; };
 		C0CF4F6D2321205500C0EF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CF4F6C2321205500C0EF74 /* AppDelegate.swift */; };
 		C0CF4F742321205600C0EF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0CF4F732321205600C0EF74 /* Assets.xcassets */; };
 		C0CF4F772321205600C0EF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CF4F752321205600C0EF74 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C056635D23263EA100BE5625 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		C0CF4F692321205500C0EF74 /* MVPArchitectureiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPArchitectureiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CF4F6C2321205500C0EF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CF4F732321205600C0EF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C056635C23263E9200BE5625 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C056635D23263EA100BE5625 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		C0CF4F602321205500C0EF74 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		C0CF4F6B2321205500C0EF74 /* MVPArchitectureiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C056635C23263E9200BE5625 /* Service */,
 				C0CF4F85232122AF00C0EF74 /* App */,
 				C0CF4F8A2321236000C0EF74 /* Extension */,
 				C0CF4F922321241000C0EF74 /* Modules */,
@@ -255,6 +266,7 @@
 				C0CF4F9D2321266A00C0EF74 /* Constants.swift in Sources */,
 				C0CF4F822321223600C0EF74 /* HomeViewController.swift in Sources */,
 				C0CF4F87232122EE00C0EF74 /* HomePresenter.swift in Sources */,
+				C056635E23263EA100BE5625 /* Service.swift in Sources */,
 				C0CF4F8C2321237100C0EF74 /* Hud.swift in Sources */,
 				C0CF4F992321249900C0EF74 /* DetailViewController.swift in Sources */,
 			);
