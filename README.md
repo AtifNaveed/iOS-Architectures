@@ -1,6 +1,7 @@
 # iOS-Architectures
+# Clean Architecture
 
-Typical master detail view using swift &
+Typical master detail example
 - Viper Architecture
 - MVVM Architecture
 - MVP Architecture
