@@ -27,7 +27,7 @@ class HomePresenter: HomeViewToPresenterProtocol, ServiceProtocol {
     func updateHomeView() {
         apiRequest = Service()
         apiRequest!.delegate = self
-        apiRequest!.fetchNews()
+        apiRequest!.apiRequest()
     }
     
     func apiRespondSuccessfully(news: [NewsModel]) {

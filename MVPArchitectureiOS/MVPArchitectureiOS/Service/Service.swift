@@ -15,7 +15,7 @@ protocol ServiceProtocol: class {
 
 class Service: NSObject {
     weak var delegate: ServiceProtocol?
-    func fetchNews() {
+    func apiRequest() {
         // TODO Move boilerplate code
         let session = URLSession.shared
         let url = URL(string: Constants.request_url)!
