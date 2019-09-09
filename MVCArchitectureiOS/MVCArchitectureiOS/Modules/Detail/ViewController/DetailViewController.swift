@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
     private func updateDtaa() {
         lblTitle.text = item?.title
         lblDescription.text = item?.description
-        lblAuthor.text = item?.author
+        lblAuthor.text = ("\"\((item?.author)!)\"")
         imagView?.image(url: (item?.urlToImage)!)
     }
 }
