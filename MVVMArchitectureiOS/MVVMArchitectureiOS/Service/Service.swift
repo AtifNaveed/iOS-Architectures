@@ -9,8 +9,8 @@
 import UIKit
 
 protocol ServiceProtocol: class {
-    func fetchNews(news: [NewsModel])
-    func fetchingNewsFailedWithError(error: Error)
+    func apiRespondSuccessfully(news: [NewsModel])
+    func apiRequestFailedWithError(error: Error)
 }
 
 class Service: NSObject {
@@ -34,13 +34,13 @@ class Service: NSObject {
                                     let newsModel = try decoder.decode(NewsModel.self, from: jsonData)
                                     array.append(newsModel)
                                 }
-                                self.delegate?.fetchNews(news: array)
+                                self.delegate?.apiRespondSuccessfully(news: array)
                             }
                         }
                     }
                 } catch {
                     print(error)
-                    self.delegate?.fetchingNewsFailedWithError(error: error)
+                    self.delegate?.apiRequestFailedWithError(error: error)
                 }
             }
         }).resume()

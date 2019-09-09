@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
  }
 
 extension HomeViewController: ServiceProtocol {
-    func fetchNews(news: [NewsModel]) {
+    func apiRespondSuccessfully(news: [NewsModel]) {
         vm.data.addAndNotify(observer: self) { [weak self] in
             DispatchQueue.main.async {
                 self?.vm.refreshWith(data: news, {
@@ -44,7 +44,7 @@ extension HomeViewController: ServiceProtocol {
             }
         }
     }
-    func fetchingNewsFailedWithError(error: Error) {
+    func apiRequestFailedWithError(error: Error) {
         print(error)
     }
 }
