@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
     }
  }
 
-extension HomeViewController: HomeViewModelProtocol {
+extension HomeViewController: ServiceProtocol {
     func fetchNews(news: [NewsModel]) {
         vm.data.addAndNotify(observer: self) { [weak self] in
             DispatchQueue.main.async {

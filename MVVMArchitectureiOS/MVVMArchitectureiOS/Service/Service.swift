@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol HomeViewModelProtocol: class {
+protocol ServiceProtocol: class {
     func fetchNews(news: [NewsModel])
     func fetchingNewsFailedWithError(error: Error)
 }
 
 class Service: NSObject {
-    weak var delegate: HomeViewModelProtocol?
+    weak var delegate: ServiceProtocol?
     func fetchNews() {
         // TODO Move boilerplate code
         let session = URLSession.shared
