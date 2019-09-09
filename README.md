@@ -1,5 +1,4 @@
-# iOS-Architectures
-# Clean Architecture
+# Clean Architecture (iOS & Swift)
 
 Typical master detail example
 - Viper Architecture
