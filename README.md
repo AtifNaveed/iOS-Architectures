@@ -22,6 +22,7 @@ Implementation of muliple architectures using same master detail example:
 (Model-View-Controller)
 ![alt image is missing](https://res.cloudinary.com/atifcloud/image/upload/c_scale,h_700/v1568023903/1_mvc_jmj97c.png)
 
+# Typical master detail example  
 ![alt image is missing](https://res.cloudinary.com/atifcloud/image/upload/c_scale,h_700/v1568020247/2_f8hitc.png)
 ![alt image is missing](https://res.cloudinary.com/atifcloud/image/upload/c_scale,h_700/v1568020872/4_dp0kjk.png)
 
