@@ -27,5 +27,5 @@ Implementation of muliple architectures using same master detail example:
 ![alt image is missing](https://res.cloudinary.com/atifcloud/image/upload/c_scale,h_700/v1568020872/4_dp0kjk.png)
 
 
-## To get api key, register here:
+## To get api key (register):
 https://newsapi.org
