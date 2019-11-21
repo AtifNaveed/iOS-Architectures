@@ -219,6 +219,7 @@
 				TargetAttributes = {
 					C0CF4F682321205500C0EF74 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -423,8 +424,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atif.gcucs-gmail.com.MVPArchitectureiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,8 +442,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atif.gcucs-gmail.com.MVPArchitectureiOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
