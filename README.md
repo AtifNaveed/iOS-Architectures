@@ -1,6 +1,6 @@
 # Clean Architecture (iOS | Swift)
 
-Implementation of multiple architectures using typical master detail example:
+Implementation of multiple architectures with typical master detail example:
 - Viper 
 - MVVM 
 - MVP 
