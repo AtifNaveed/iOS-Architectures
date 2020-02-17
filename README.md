@@ -6,7 +6,7 @@ Implementation of multiple architectures with typical master detail example:
 - MVP Architecture
 - MVC Architecture
 
-## Viper Architecture
+## Viper Architecture:
 (View-Interactor-Presenter-Entity-Router)
 ![alt image is missing](https://res.cloudinary.com/atifcloud/image/upload/c_scale,h_700/v1568023903/4_viper_fa0w0e.png)
 
